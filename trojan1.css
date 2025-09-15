@@ -614,7 +614,7 @@ header {
 }
 
 
-#bigLockLogo {
+#gama {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -632,10 +632,20 @@ header {
     padding: 6px 10px;
 }
 
-#big {
+.big {
     height: 80px;
     width: 80px;
 }
+
+.logoDiv a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+/* #gamaLogo {
+    height: 70px;
+    width: 150px;
+} */
 
 .partnersFirstRow1 div,
 .partnersSecondRow div {
