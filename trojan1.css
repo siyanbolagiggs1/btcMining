@@ -2,6 +2,12 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
+.logo {
+    height: 50px;
+    width: auto;
+    margin-top: -13px;
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -42,6 +48,10 @@ body {
     padding-right: 4em;
 }
 
+#navUl {
+    width: 1%;
+}
+
 @media (max-width:769px) {
     #middleSection {
         padding-left: 1em;
@@ -55,8 +65,8 @@ body {
 } */
 
 #navUl {
-        height: 20px;
-/*     display: flex;
+    height: 20px;
+    /*    display: flex;
     justify-content: space-evenly;
     align-items: center; */
 }
@@ -65,8 +75,16 @@ body {
     width: 100%;
     display: flex;
     /* flex-direction: column; */
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* align-items: center; */
+}
+
+
+
+@media (min-width: 576px) {
+    #navUl {
+        display: none;
+    }
 }
 
 @media (max-width: 575px) {
@@ -77,9 +95,9 @@ body {
         z-index: 1000;
     }
 
-    /* #navUl {
+    #navUl {
         width: 100%;
-    } */
+    }
 
     #navUl2 {
         width: 100%;
@@ -90,6 +108,10 @@ body {
     #navUl2 li {
         padding: 1em;
         width: 30%;
+    }
+
+    #navUl2 .lengthy {
+        width: 40%;
     }
 }
 
@@ -149,9 +171,9 @@ body {
     flex-direction: row;
 }
 
-#NavLogo {
-    height: 10%;
-    width: 10%;
+.navLogo {
+    height: 25px;
+    padding-bottom: 5px;
 }
 
 
@@ -265,8 +287,15 @@ header {
 }
 
 .WhatWeDoText h5 {
-    font-size: medium;
-    padding-bottom: 15px;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+@media(min-width:768px)and (max-width: 992px) {
+    .WhatWeDoText h5 {
+        font-size: medium;
+        padding-bottom: 25px;
+    }
 }
 
 .slideshow img {
@@ -351,7 +380,8 @@ header {
 
     .WhatWeDoText {
         display: flex;
-        align-items: center;
+        align-self: center;
+        padding-bottom: 25px;
     }
 }
 
@@ -599,12 +629,23 @@ header {
     width: 80px;
 }
 
+.partnersFirstRow1 div,
+.partnersSecondRow div {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.partnersFirstRow1 div img,
+.partnersSecondRow div img {
+    opacity: 0.7;
+}
+
 @media(max-width:805px) {
 
     .partnersFirstRow1 div,
     .partnersSecondRow div {
         display: flex;
         justify-content: flex-start;
+        color: rgba(0, 0, 0, 0.5);
         /* padding: 1em; */
     }
 
@@ -982,7 +1023,7 @@ EDITED */
         left: 30%;
     }
 
-   .timeline>li.timeline-inverted>.timeline-panel {
+    .timeline>li.timeline-inverted>.timeline-panel {
         float: right;
         width: 63%;
         /* padding: 0 5px 5px 50px; */
@@ -1008,8 +1049,7 @@ EDITED */
 
 
 #upBotton {
-        display: none;
-/*     background-color: rgba(148, 144, 144, 0.5);
+    display: none;
+    /* background-color: rgba(148, 144, 144, 0.5);
     border: 1px solid rgba(148, 144, 144, 0.5); */
 }
-
