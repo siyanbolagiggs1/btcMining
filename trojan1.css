@@ -1,559 +1,1063 @@
-<!DOCTYPE html>
-<html>
+body {
+    background-color: rgb(245, 245, 245);
+}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TROJAN</title>
-    <link rel="stylesheet" href="C:\Users\HP\Desktop\DEV\NEW\bootstrap\bootstrap-5.3.6-dist\css\bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="TROJAN.CSS" />
-</head>
+.logo {
+    height: 50px;
+    width: auto;
+    margin-top: -13px;
+}
 
-<body class="body">
-    <section id="topSection">
-        <nav class="navbar navbar-expand-sm fixed-top" id="navMain">
-            <div class="container-fluid">
-
-                <ul class=" me-auto mb-2 mb-lg-0" id="navUl">
-                    <button class="navbar-toggler navbar-dark" id="navButton" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navTog" aria-controls="#navTog" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                </ul>
+html,
+body {
+    overflow-x: hidden;
+}
 
 
+#trojanLogoDiv {
+    width: 25%;
+    height: 40%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+}
+
+@media (max-width: 770px) {
+    #trojanLogoDiv {
+        height: 20%;
+    }
+}
+
+#topSection {
+    height: 460px;
+    background-image: url('https://images.unsplash.com/photo-1644952354935-0bc0d25a9996?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fGJpdGNvaW58ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
-                <div class="collapse navbar-collapse" id="navTog">
-                    <ul class="me-auto mb-2 mb-lg-0" id="navUl2">
-                        <li class="navbar-nav">
-                            <a href="#whatWeDo">What We Do</a>
-                        </li>
-                        <li class="navbar-nav">
-                            <a href="#about">Progress So Far</a>
-                        </li>
+#introductionA {
+    color: white;
+}
 
+#introductionA:hover {
+    text-decoration-color: rgb(255, 215, 0);
+}
 
+#middleSection {
+    padding-left: 4em;
+    padding-right: 4em;
+}
 
+#navUl {
+    width: 1%;
+}
 
-                        <li class="navbar-nav">
-                            <a href="#foundersH2">Founders</a>
-                        </li>
-                        <li class="navbar-nav">
-                            <a href="#travels">Travels</a>
-                        </li>
-                        <li class="navbar-nav">
-                            <a href="#mission">Mission</a>
-                        </li>
-                        <li class="navbar-nav">
-                            <a href="#Partners">Partners</a>
-                        </li>
-                        <li class="navbar-nav">
-                            <a href="#footer">Reach Out</a>
-                        </li>
+@media (max-width:769px) {
+    #middleSection {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
 
-                    </ul>
-                </div>
+/* #navButton {
+    display: flex;
+    justify-content: space-evenly;
+} */
 
-            </div>
-        </nav>
+#navUl {
+    height: 20px;
+    /*    display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+}
 
-
-        <section id="introduction" class="text-center">
-            <p>&nbsp;&nbsp;&nbsp;</p>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <div id="trojanLogoDiv">
-                            <img src="images/trojan extracted.png" alt="trojanLogo">
-                        </div>
-                        <h1 class=" mb-3 fw-semibold lh-5">A group Nigerian blockchain
-                            enthusiasts who
-                            started
-                            mining bitcoin full
-                            time.
-
-                        </h1>
-                        <p class="muted">We design, deploy and manage high-performance bitcoin mining operations powered
-                            by
-                            renewable energy and industry-leading hardware. Scale confidently with real-time monitoring,
-                            advanced
-                            cooling, and optimized power strategies.</p>
-                        <div class="cta">
-
-                        </div>
-                        <p id="companyProfile" style="text-decoration:underline; letter-spacing: 0.1em;"><a
-                                class="mb-3 fw-semibold lh-5" id="introductionA" class="nav-link active"
-                                href="https://www.canva.com/design/DAGQhki_0dY/05d0qmTZr3RLmGfGuVpjGg/view?utm_content=DAGQhki_0dY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc01d8412c6#1"
-                                target="_blank">
-                                Company profile
-                                <ion-icon name="finger-print-outline" id="CompProfileIcon"></ion-icon>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <p>&nbsp;&nbsp;&nbsp;</p>
-            <p>&nbsp;&nbsp;&nbsp;</p>
-        </section>
-
-    </section>
-    <p>&nbsp;&nbsp;&nbsp;</p>
-    <p>&nbsp;&nbsp;&nbsp;</p>
-    <section id="middleSection">
-        <section id="whatWeDo">
-            <h2 id="whatWeDoH1" class="mb-3 fw-semibold lh-5">What We Do</h2>
-            <div id="whatWeDoFirstDiv" class="container text-center">
-                <div id="whatWeDoContainer" class="row">
-                    <div class="col" id="whatWeDoCol">
-                        <div class="slideshow glass" id="imgDiv1">
-                            <img src="https://plus.unsplash.com/premium_photo-1676983351997-ab736f887d1c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzAxfHxiaXRjb2luJTIwbWluaW5nfGVufDB8fDB8fHww"
-                                class="fade active">
-                            <img src="https://images.unsplash.com/photo-1550565227-a6144af19c78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Yml0Y29pbiUyMG1pbmluZ3xlbnwwfHwwfHx8MA%3D%3D"
-                                class="fade">
-                            <img src="https://plus.unsplash.com/premium_photo-1682464548221-715397510bbf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGJpdGNvaW4lMjBtaW5pbmd8ZW58MHx8MHx8fDA%3D"
-                                class="fade">
-                        </div>
-                        <div class="WhatWeDoText">
-                            <h5 class="card-title pt-2">Setup & Consultancy</h5>
-                        </div>
-                    </div>
-                    <div class="col" id="whatWeDoCol">
-                        <div class="slideshow glass" id="imgDiv1">
-                            <img src="https://plus.unsplash.com/premium_photo-1676983351997-ab736f887d1c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzAxfHxiaXRjb2luJTIwbWluaW5nfGVufDB8fDB8fHww"
-                                class="fade active">
-                            <img src="https://plus.unsplash.com/premium_photo-1682464548221-715397510bbf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGJpdGNvaW4lMjBtaW5pbmd8ZW58MHx8MHx8fDA%3D"
-                                class="fade">
-                            <img src="https://images.unsplash.com/photo-1550565227-a6144af19c78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Yml0Y29pbiUyMG1pbmluZ3xlbnwwfHwwfHx8MA%3D%3D"
-                                class="fade">
-                        </div>
-                        <div class="WhatWeDoText">
-                            <h5 class="card-title pt-2">Rig Repair</h5>
-                        </div>
-                    </div>
-                    <div class="col" id="whatWeDoCol">
-                        <div class="slideshow glass" id="imgDiv1">
-                            <img src="https://images.unsplash.com/photo-1550565227-a6144af19c78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Yml0Y29pbiUyMG1pbmluZ3xlbnwwfHwwfHx8MA%3D%3D"
-                                class="fade">
-                            <img src="https://plus.unsplash.com/premium_photo-1682464548221-715397510bbf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGJpdGNvaW4lMjBtaW5pbmd8ZW58MHx8MHx8fDA%3D"
-                                class="fade">
-                            <img src="https://plus.unsplash.com/premium_photo-1676983351997-ab736f887d1c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzAxfHxiaXRjb2luJTIwbWluaW5nfGVufDB8fDB8fHww"
-                                class="fade active">
-                        </div>
-                        <div class="WhatWeDoText">
-                            <h5 class="card-title pt-2">Btc Mining</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+#navUl2 {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* align-items: center; */
+}
 
 
 
+@media (min-width: 576px) {
+    #navUl {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    #navButton {
+        position: fixed;
+        top: 10px;
+        right: 15px;
+        z-index: 1000;
+    }
+
+    #navUl {
+        width: 100%;
+    }
+
+    #navUl2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+    }
+
+    #navUl2 li {
+        padding: 1em;
+        width: 30%;
+    }
+
+    #navUl2 .lengthy {
+        width: 40%;
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#companyProfile {
+    width: 25%;
+    display: flex;
+    justify-self: center;
+}
+
+@media(max-width:770px) {
+    #companyProfile {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width: 660px) {
+    .navbar-nav a {
+        font-size: small;
+    }
+}
+
+.navbar-nav:hover {
+    transform: translateY(-2px);
+}
 
 
-        <p>&nbsp;&nbsp;&nbsp;</p>
-        <div class="seperator"></div>
-        <p>&nbsp;&nbsp;&nbsp;</p>
-        <p>&nbsp;&nbsp;&nbsp;</p>
+#navUl li,
+#navUl p {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
 
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="progressHeader section-heading ">Progress So Far</h1>
-                        <p>&nbsp;&nbsp;&nbsp;</p>
+#navMain {
+    transition: transform 0.5s ease;
+    will-change: transform;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
 
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle"
-                                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-                                alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h5>(2021-2022)</h5>
-                                <h5 class="subheading">Our Humble Beginnings</h5>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero
-                                    unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle"
-                                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-                                alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h5>(March 2011)</h5>
-                                <h5 class="subheading">An Agency is Born</h5>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero
-                                    unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle"
-                                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-                                alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h5>(December 2015)</h5>
-                                <h5 class="subheading">Transition to Full Service</h5>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero
-                                    unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle"
-                                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-                                alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h5>(July 2020)</h5>
-                                <h5 class="subheading">Phase Two Expansion</h5>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero
-                                    unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle"
-                                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-                                alt="..." /></div>
-                        <div class="timeline-panel">
-                            <h5 class="timeline-body">
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h5>
-                        </div>
-            </div>
-            </li>
-            </ul>
-            </div>
-        </section>
+#navContainerFluid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navLogo {
+    height: 25px;
+    padding-bottom: 5px;
+}
 
 
-        <p>&nbsp;&nbsp;&nbsp;</p>
-        <div class="seperator"></div>
-        <p>&nbsp;&nbsp;&nbsp;</p>
-        <section class="founders-section">
-            <h2 id="foundersH2">Founders</h2>
-            <p>&nbsp;&nbsp;&nbsp;</p>
-            <div class="row founders-grid flex-nowrap">
-                <div class="col founder-card">
-                    <img src="images/yassar.jpg" alt="Founder 1">
-                    <div class="text-start">
-                        <h4>Siyanbola Yassar</h4>
-                        <p class="role text-dark opacity-75">CEO</p>
-                        <div class="founderText">
-                            Yassar is a dynamic and tech driven professional with over 3 years of specialized expertise
-                            in the
-                            blockchain industry.
-                        </div>
-                    </div>
-                    <button class="founderBotton border-0">
-                        <ion-icon name="logo-whatsapp" class="founderIcon text-success fs-4"></ion-icon>
-                        <a href="https://wa.me/+2348102747595" class="text-decoration-none text-success"></a>
-                    </button>
-                </div>
-                <div class="col founder-card">
-                    <img src="https://media.canva.com/v2/image-resize/format:JPG/height:200/quality:75/uri:ifs%3A%2F%2FM%2F17ba5b1a-84eb-44e2-8186-7157bcc7d12e/watermark:F/width:160?csig=AAAAAAAAAAAAAAAAAAAAAOzn3aAAwQB_t3Un3AZ7AYwZ6UEAaOqfTs8OnnsPKmhG&amp;exp=1757525440&amp;osig=AAAAAAAAAAAAAAAAAAAAAJASRerMhzHIwGqKTV0k_eq3Ydc3xkFwaBudU6qrzoma&amp;signer=media-rpc&amp;x-canva-quality=thumbnail"
-                        alt="Founder 2">
-                    <div class="text-start">
-                        <h4>Sambo Ridwan</h4>
-                        <p class=" role text-dark opacity-75">COO</p>
-                        <div class="founderText">Ridwan is a seasoned and highly experienced professional in business
-                            operations
-                            and Project
-                            Management.
-                        </div>
-                    </div>
-                    <button class="founderBotton border-0">
-                        <ion-icon name="logo-whatsapp" class="founderIcon text-success fs-4"></ion-icon>
-                        <a href="https://wa.me/+2348162035967" class="text-decoration-none text-success"></a>
-                    </button>
-                </div>
+#imgDiv1 {
+    /* border-radius: 0.2em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    /* margin-top: 1em; */
+    color: white;
+}
 
-                <div class="col founder-card">
-                    <img src="images/yazid.jpg" alt="Founder 3">
-                    <div class="text-start">
-                        <h4>Siyanbola Yazid</h4>
-                        <p class="role text-dark opacity-75">CTO</p>
-                        <div class="founderText">
-                            Yazid is a highly accomplished and result driven Chief Technology Officer at Trojan Synergy
-                            Services
-                            Limited.
-                        </div>
-                    </div>
-                    <button class="founderBotton border-0">
-                        <ion-icon name="logo-whatsapp" class="founderIcon text-success fs-4"></ion-icon>
-                        <a href="https://wa.me/+2348169459318" class="text-decoration-none text-success"
-                            placeholder="Message on WhatsApp"></a>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <div class="seperator"></div>
-        <p>&nbsp;&nbsp;&nbsp;</p>
-        <p>&nbsp;&nbsp;&nbsp;</p>
+img {
+    width: 100%;
+    height: 100%;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    /* border-radius: 1em; */
+}
 
-        <section id="travels">
-            <h2 id="travelsH1" class="mb-3 fw-semibold lh-5">Travels & meetups</h2>
-            <div id="travelsContainer" class="container my-5">
-                <div class="row g-4">
-                    <!-- Column 1 -->
-                    <div class="img-container col-md">
-                        <div class="travelsImg" data-bs-toggle="modal" data-bs-target="#imageModal1">
-                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-                                class="img-fluid" alt="Image 1">
-                            <span class="expand-icon">
-                                <ion-icon name="expand"></ion-icon>
-                            </span> <!-- Unicode expand icon -->
-                        </div>
-                        <div>
-                            <h5 class="card-title text-center py-1">
-                                Kenya
-                            </h5>
-                            <p class="card-text text-center opacity-75">Kenya bitcoin grid</p>
-                        </div>
-                    </div>
+#navButton {
+    margin-bottom: 0.5em;
+    display: flex;
+    align-self: flex-start;
+    margin-right: 5px;
+}
 
-                    <!-- Column 2 -->
-                    <div class="img-container col-md">
-                        <div class="travelsImg" data-bs-toggle="modal" data-bs-target="#imageModal1">
-                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-                                class="img-fluid" alt="Image 1">
-                            <span class="expand-icon">
-                                <ion-icon name="expand"></ion-icon>
-                            </span> <!-- Unicode expand icon -->
-                        </div>
-                        <div>
-                            <h5 class="card-title text-center py-1">
-                                Ghana
-                            </h5>
-                            <p class="card-text text-center opacity-75">Ghana bitcoin grid</p>
-                        </div>
-                    </div>
+#navButton:focus,
+#navButton:active {
+    outline: none;
+    box-shadow: none;
+}
 
-                    <!-- Column 3 -->
-                    <div class="img-container col-md">
-                        <div class="travelsImg" data-bs-toggle="modal" data-bs-target="#imageModal1">
-                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-                                class="img-fluid" alt="Image 1">
-                            <span class="expand-icon">
-                                <ion-icon name="expand"></ion-icon>
-                            </span> <!-- Unicode expand icon -->
-                        </div>
-                        <div class>
-                            <h5 class="card-title text-center py-1">
-                                Zambia
-                            </h5>
-                            <p class="card-text text-center opacity-75">Zambia bitcoin grid</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+#navButton:active {
+    background-color: #f1f1f1;
+    border-color: #999;
+    transform: scale(0.95);
+    transition: all 0.2s ease;
+}
 
-            <!-- Modal 1 -->
-            <div class="modal fade" id="imageModal1" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen">
-                    <div class="modal-content bg-dark">
-                        <div class="modal-header border-0">
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-                                class="img-fluid" alt="Image 1">
-                        </div>
-                    </div>
-                </div>
-            </div>
+#navButton .navbar-toggler-icon {
+    margin-left: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
-            <!-- Modal 2 -->
-            <div class="modal fade" id="imageModal2" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen">
-                    <div class="modal-content bg-dark">
-                        <div class="modal-header border-0">
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-                                class="img-fluid" alt="Image 2">
-                        </div>
-                    </div>
-                </div>
-            </div>
+@media (min-width: 575px) {
+    #navButton {
+        display: flex;
+        display: none !important;
+    }
+}
 
-            <!-- Modal 3 -->
-            <div class="modal fade" id="imageModal3" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen">
-                    <div class="modal-content bg-dark">
-                        <div class="modal-header border-0">
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVldHVwc3xlbnwwfHwwfHx8MA%3D%3D"
-                                class="img-fluid" alt="Image 3">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+#CompProfileIcon {
+    display: flex;
+    align-self: center;
+    padding-left: 5px;
+}
 
-        <p>&nbsp;&nbsp;&nbsp;</p>
-        <p>&nbsp;&nbsp;&nbsp;</p>
-        <section id="mission">
-            <div class="col">
-                <h2> Mission </h2>
-                <p>&nbsp;&nbsp;&nbsp;</p>
+header {
+    display: flex;
+    display: block;
+    margin: 5em;
+}
 
-                <div>
-                    <h5 class="missionCol1 lh-base">To secure the Bitcoin network by delivering the most efficient,
-                        resilient,
-                        and
-                        environmentally responsible mining
-                        operations in the world.</h5>
-                    <div>We believe mining should strengthen grids, catalyze renewable build‑out, and operate
-                        transparently. Our roadmap aligns
-                        profitability with sustainability.</div>
-                </div>
-            </div>
-            <p>&nbsp;&nbsp;&nbsp;</p>
+#main {
+    width: 100%;
+    padding-left: 4em;
+    padding-right: 4em;
+}
 
-            <div class="col" id="missionCol2">
-                <p>&nbsp;&nbsp;&nbsp;</p>
+#introduction {
+    height: 460px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.6);
+}
 
-                <div>
-                    <h5>Pillars</h5>
-                </div>
-                <div>
-                    <ul>
-                        <li>Efficiency: maximize TH/s per watt through thermal design & firmware.
-                        </li>
-                        <li>Resilience: modular builds, redundant power paths, and rapid swap SOPs.
-                        </li>
-                        <li>Transparency: real-time dashboards and auditable reporting.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <p>&nbsp;&nbsp;&nbsp;</p>
-        <div class="seperator"></div>
-        <p>&nbsp;&nbsp;&nbsp;</p>
-        <p>&nbsp;&nbsp;&nbsp;</p>
-        <section id="Partners" class="Partners">
-            <h2>Partners</h2>
-            <!-- <div class="partnersFirstRow container mt-4"> -->
-            <div class="partnersFirstRow1 row text-center mb-4">
-                <div id="bigLockLogo" class="logoDiv col "><img id="big" src="images/bigLockLogo.png" alt="">
-                    <H5 class="pt-4">BIGLOCK <p> DATA CENTER</p>
-                    </H5>
-                </div>
-                <div id="sukumaLogo" class="logoDiv col">
-                    <h4> Sukuma</h4>
-                    <h4>Ventures</h4>
-                </div>
-                <div class="logoDiv col">
-                    <img id="big" src="images/quantumLogo.png" alt="">
-                    <h4> Quantum</h4>
-                </div>
-            </div>
-            <!-- </div> -->
+#introductionA {
+    display: flex;
+    justify-content: center;
+}
 
-            <div class="partnersSecondRow row text-center">
-                <div class=" logoDiv col">
-                    <img id="big" src="images/QRBLogo.png" alt="">
-                    <h3>QBR</h3>
-                </div>
-                <div class="logoDiv col"><img id="big" src="images/gridlessLogo.png" alt="">
-                    <h4> GRIDLESS</h4>
-                </div>
-            </div>
-            </div>
-        </section>
-        <p>&nbsp;&nbsp;&nbsp;</p>
-        <p>&nbsp;&nbsp;&nbsp;</p>
-    </section>
-    <footer class="row text-white" id="footer">
-        <div class="footerDivWrap">
-            <div class="col" id="footerFirstDiv">
-                <div>
-                    <ion-icon name="logo-twitter"></ion-icon>
-                    <a href="https://x.com/TrojanMining?t=1qH-IJnuHsZhor1emMzVIw&s=08" class="ReachOutIcon text-white"
-                        target="_blank">Twitter</a>
+#navMain.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
 
-                </div>
-                <div>
-                    <ion-icon name="mail-unread"></ion-icon>
-                    <a href="mailto:trojanminingng@gmail.com" class="ReachOutIcon text-light"
-                        target="_blank">trojanminingng@gmail.com</a>
-                </div>
-            </div>
+.fade-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
 
-            <div class="col" id="footerSecondDiv">
-                <div class="pb-4">
-                    <!-- <h3 class=" pb-5 text-warning">TROJAN.mining</h3> -->
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: visible;
+}
 
-                    <a href="https://x.com/TrojanMining" class="ReachOutIcon text-light">
-                        <ion-icon name="location-outline"></ion-icon>
-                        No.7 dave Anazodo street, Ajao estate, isolo, Lagos.
-                    </a>
-                </div>
-                <iframe class="footerMap rounded-circle google-map"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15783.244446702129!2d4.49489179927621!3d8.517712471429604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1757437326920!5m2!1sen!2sng"
-                    width="50%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-        <a href="#topSection"> <button type="button" id="upBotton" class="col btn position-fixed w-10"
-                style="bottom: 20px; right: 20px; border-radius: 100px;">
-                <ion-icon name="arrow-up-outline"></ion-icon>
-            </button></a>
-    </footer>
-    <!-- <div class="row">
+.WhatWeDoText {
+    height: 10px;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.9);
+}
 
-    </div> -->
+.WhatWeDoText h5 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+@media(min-width:768px)and (max-width: 992px) {
+    .WhatWeDoText h5 {
+        font-size: medium;
+        padding-bottom: 25px;
+    }
+}
+
+.slideshow img {
+    border-radius: 1em;
+    position: absolute;
+    width: 100%;
+    height: 215px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow img.active {
+    opacity: 1;
+}
+
+#topSection {
+    background-color: rgb(245, 245, 245);
+}
+
+.col-sm {
+    width: 30%;
+}
+
+/* what we do and travels */
+/* what we do and travels */
+/* what we do and travels */
+
+#whatWeDoCol:hover,
+#travelsCol:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgba(164, 159, 159, 0.2);
+}
+
+#whatWeDoCol,
+#travelsCol {
+    width: 100%;
+    background: rgb(245, 245, 245);
+    /* border-radius: 1em; */
+    padding: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 0.5px solid rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em;
+    padding-bottom: 1em;
+}
+
+#whatWeDoCol {
+    height: 250px;
+    border-radius: 1em;
+    padding: 2px;
+    padding-bottom: 0px;
+}
+
+@media(max-width:767px) {
+    #whatWeDoContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #whatWeDoCol {
+        width: 100%;
+        height: 400px;
+    }
+
+    .slideshow {
+        width: 100%;
+        position: relative;
+        overflow: visible;
+    }
+
+    .slideshow img {
+        height: 350px;
+    }
+
+    .WhatWeDoText {
+        display: flex;
+        align-self: center;
+        padding-bottom: 25px;
+    }
+
+    #travels {
+        margin-right: 15px;
+    }
+}
+
+/* 
+@media(max-width:560px) {
+    #whatWeDoContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #whatWeDoCol {
+        width: 80%;
+        height: 200px;
+    }
+
+    .slideshow {
+        position: relative;
+        overflow: visible;
+    }
+
+    .slideshow img {
+        height: 150px;
+    }
+} */
+
+.img-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: rgb(245, 245, 245);
+    padding-bottom: 1em;
+    padding-left: 0em;
+    padding-right: 0em;
+    margin: 25px 10px;
+}
+
+.img-container img {
+    border-radius: 0em;
+}
+
+.img-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgba(164, 159, 159, 0.2);
+    transform: scale(1.03);
+}
+
+.travelsImg {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.expand-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.img-fluid {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* FOUNDERS */
+/* FOUNDERS */
+/* FOUNDERS */
+.founders-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.founders-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.founders-section .intro-text {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.founder-card {
+    background: rgb(245, 245, 245);
+    border-radius: 1em;
+    padding: 20px;
+    padding-bottom: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 0.5px solid rgb(228, 228, 228);
+}
+
+.founder-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.founder-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.founder-card .role {
+    color: #007BFF;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.founder-card .bio {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.founderBotton {
+    border: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    background: rgb(245, 245, 245);
+    padding-top: 5px;
+}
+
+.founderIcon {
+    opacity: 0.7;
+}
+
+.founderIcon:hover {
+    opacity: 1;
+}
+
+/* TRANSFORM */
+/* TRANSFORM */
+/* TRANSFORM */
+/* TRANSFORM */
+.founder-card:hover,
+.whatWeDoneDiv:hover,
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(148, 144, 144, 0.3);
+}
+
+#foundersH2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.founderText {
+    color: rgba(0, 0, 0, 0.7);
+
+}
+
+/* MISSION */
+/* MISSION */
+/* MISSION */
+/* MISSION */
+#mission {
+    display: flex;
+    flex-direction: row;
+}
+
+.missionCol1 {
+    border-left: 2px solid rgb(255, 196, 0);
+    padding-left: 1em;
+}
+
+#missionCol2 {
+    background-color: rgb(245, 245, 245);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+@media(max-width:600px) {
+    #mission {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* PARTNERS */
+/* PARTNERS */
+/* PARTNERS */
+/* PARTNERS */
+.partner-card {
+    background: rgb(245, 245, 245);
+    border-radius: 1em;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 0.5px solid rgb(199, 199, 199);
+}
+
+.partner-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 1em;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+}
 
 
-    <script src="TROJAN.JS"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+#bigLockLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-</html>
+#sukumaLogo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+}
+
+#big {
+    height: 80px;
+    width: 80px;
+}
+
+.partnersFirstRow1 div,
+.partnersSecondRow div {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.partnersFirstRow1 div img,
+.partnersSecondRow div img {
+    opacity: 0.7;
+}
+
+@media(max-width:805px) {
+
+    .partnersFirstRow1 div,
+    .partnersSecondRow div {
+        display: flex;
+        justify-content: flex-start;
+        color: rgba(0, 0, 0, 0.5);
+        /* padding: 1em; */
+    }
+
+    #sukumaLogo {
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:768px) {
+    .partnersFirstRow1 div {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .partnersFirstRow1 div h4 {
+        display: flex;
+        align-self: center;
+    }
+
+    .partnersFirstRow1 {
+        justify-content: center;
+    }
+
+    .partnersSecondRow div {
+        justify-content: center;
+        width: 50%;
+    }
+}
+
+/* SEPARATOR */
+/* SEPARATOR */
+/* SEPARATOR */
+/* SEPARATOR */
+.seperator {
+    border-bottom: 0.5px solid rgb(255, 196, 0);
+}
+
+#footer {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1723307061004-6e2e087deae1?q=80&w=684&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#footer div div div {
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+.footerDivWrap {
+    background-color: rgb(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+#footerFirstDiv {
+    border-bottom: 0.5px solid rgb(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+    width: 90%;
+}
+
+#footerFirstDiv div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerSecondDiv {
+    display: flex;
+    flex-direction: column;
+    /* align-self: flex-start; */
+    align-items: center;
+    /* padding-top: 2em; */
+    padding-bottom: 2em;
+}
+
+#footerSecondDiv {
+    /* height: 70px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+.ReachOutIcon {
+    text-decoration: none;
+}
+
+.ReachOutIcon:hover {
+    text-decoration: underline;
+}
+
+.footerMap {
+    border-radius: 2em;
+    height: 140px;
+    width: 150px;
+}
+
+/* PROGRESS  */
+/* PROGRESS  */
+/* PROGRESS  */
+/* PROGRESS  */
+
+.progressHeader {
+    display: flex;
+    justify-self: flex-start;
+}
+
+.timeline-body p {
+    font-size: 14px;
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: "";
+    background-color: #e9ecef;
+}
+
+.timeline>li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px;
+}
+
+.timeline>li:after,
+.timeline>li:before {
+    display: table;
+    content: " ";
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    position: relative;
+    float: right;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    background-color: #ffc800;
+}
+
+.timeline>li .timeline-image h4,
+.timeline>li .timeline-image .h4 {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 12px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4,
+.timeline .timeline-heading .h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline .timeline-heading h4.subheading,
+.timeline .timeline-heading .subheading.h4 {
+    text-transform: none;
+}
+
+.timeline .timeline-body>ul,
+.timeline .timeline-body>p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .timeline:before {
+        left: 50%;
+    }
+
+    .timeline>li {
+        min-height: 100px;
+        margin-bottom: 100px;
+    }
+
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+
+    .timeline>li .timeline-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+
+    .timeline>li .timeline-image h4,
+    .timeline>li .timeline-image .h4 {
+        font-size: 13px;
+        line-height: 18px;
+        margin-top: 16px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .timeline>li {
+        min-height: 150px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
+    .timeline>li .timeline-image h4,
+    .timeline>li .timeline-image .h4 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 30px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 20px 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .timeline>li {
+        min-height: 170px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px 100px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px;
+    }
+
+    .timeline>li .timeline-image h4,
+    .timeline>li .timeline-image .h4 {
+        margin-top: 40px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 100px 20px 20px;
+    }
+}
+
+/* EDITED
+EDITED
+EDITED
+EDITED */
+@media (max-width: 768px) {
+    .timeline:before {
+        left: 50%;
+    }
+
+    .timeline>li {
+        min-height: 100px;
+        margin-bottom: 100px;
+    }
+
+    .timeline>.timeline-inverted {
+        width: 100%;
+    }
+
+
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 50%;
+        /* padding: 0 20px 20px 30px; */
+        padding-left: 1px;
+        padding-right: 15px;
+        text-align: right;
+    }
+
+    .timeline>li .timeline-panel>.timeline-body {
+        text-align: left;
+    }
+
+    .timeline>li .timeline-image {
+        left: 65%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-image {
+        left: 30%;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        float: right;
+        width: 63%;
+        /* padding: 0 5px 5px 50px; */
+        padding-left: 35px;
+        padding-right: 3px;
+        text-align: left;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel>.timeline-heading,
+    .timeline>li.timeline-inverted>.timeline-panel>.timeline-body {
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 1px;
+    }
+
+    /* .timeline>li.timeline-inverted>.timeline-panelLast {
+        padding-left: 190px;
+        padding-right: 1px;
+    } */
+
+}
+
+
+
+#upBotton {
+    display: none;
+    /* background-color: rgba(148, 144, 144, 0.5);
+    border: 1px solid rgba(148, 144, 144, 0.5); */
+}
