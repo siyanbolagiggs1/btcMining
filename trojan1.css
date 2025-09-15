@@ -972,21 +972,21 @@ EDITED */
     }
 
     .timeline>li .timeline-image {
-        left: 62%;
+        left: 65%;
         width: 100px;
         height: 100px;
         margin-left: -50px;
     }
 
     .timeline>li.timeline-inverted>.timeline-image {
-        left: 34%;
+        left: 30%;
     }
 
-    .timeline>li.timeline-inverted>.timeline-panel {
+   .timeline>li.timeline-inverted>.timeline-panel {
         float: right;
         width: 63%;
         /* padding: 0 5px 5px 50px; */
-        padding-left: 15px;
+        padding-left: 35px;
         padding-right: 3px;
         text-align: left;
     }
@@ -1010,4 +1010,5 @@ EDITED */
 #upBotton {
     background-color: rgba(148, 144, 144, 0.5);
     border: 1px solid rgba(148, 144, 144, 0.5);
+
 }
