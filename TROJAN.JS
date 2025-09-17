@@ -68,7 +68,7 @@ window.addEventListener('scroll', () => {
 
     lastScrollY = currentScrollY;
 });
-const scrollButton = document.getElementById('upBotton');
+const scrollButton = document.getElementById('upButton');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) { // Show after scrolling 100px
@@ -83,3 +83,4 @@ myMap.addEventListener('click', function () {
     // console.log('clicked')
     window.open('https://www.google.com/maps?ll=8.517712,4.494892&z=13&t=m&hl=en&gl=NG&mapclient=embed', '_blank')
 })
+
