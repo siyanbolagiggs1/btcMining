@@ -760,18 +760,6 @@ header {
     margin-top: 20px;
 }
 
-@media(max-width:770px) {
-    /* #upBotton {
-        display: none;
-    } */
-
-    #upButton {
-        display: none;
-        /* background-color: none;
-        border: none; */
-    }
-
-}
 
 #upButtonDiv {
     height: 50px;
