@@ -767,6 +767,8 @@ header {
 
     #upButton {
         display: none;
+        /* background-color: none;
+        border: none; */
     }
 
 }
