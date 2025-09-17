@@ -768,10 +768,8 @@ header {
 
 }
 
-#upBotton {
-    /* background-color: rgba(148, 144, 144, 0.5); */
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(148, 144, 144, 0.5);
+#upButton {
+    background-color: rgba(148, 144, 144, 0.5);
 }
 
 
