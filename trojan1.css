@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-self: center;
     justify-content: center;
+    margin-top: 30px;
 }
 
 @media (max-width: 770px) {
@@ -29,7 +30,7 @@ body {
 }
 
 #topSection {
-    height: 460px;
+    height: 485px;
     background-image: url('https://images.unsplash.com/photo-1644952354935-0bc0d25a9996?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fGJpdGNvaW58ZW58MHx8MHx8fDA%3D');
     background-size: cover;
     background-position: center;
@@ -71,6 +72,10 @@ body {
     /*    display: flex;
     justify-content: space-evenly;
     align-items: center; */
+}
+
+#navTog {
+    margin-right: 60px;
 }
 
 #navUl2 {
@@ -128,6 +133,7 @@ body {
     width: 25%;
     display: flex;
     justify-self: center;
+    justify-content: center;
 }
 
 @media(max-width:770px) {
@@ -253,7 +259,7 @@ header {
 }
 
 #introduction {
-    height: 460px;
+    height: 485px;
     color: aliceblue;
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -622,8 +628,16 @@ header {
 
 #sukumaLogo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
+
+#sukumaLogo div h5 {
+    font-size: medium;
+}
+
+/* .OGBTCLogo {
+    font-size: large;
+} */
 
 .logoDiv {
     display: flex;
@@ -633,8 +647,8 @@ header {
 }
 
 .big {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
 }
 
 .logoDiv a {
@@ -732,7 +746,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 3em;
+    padding-top: 2em;
     padding-bottom: 1.5em;
     width: 90%;
 }
@@ -746,18 +760,24 @@ header {
 #footerSecondDiv {
     display: flex;
     flex-direction: column;
-    /* align-self: flex-start; */
     align-items: center;
-    /* padding-top: 2em; */
+    justify-content: center;
     padding-bottom: 2em;
+    margin-top: 20px;
 }
 
-#footerSecondDiv {
-    /* height: 70px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+#footerSecondDiv div {
+    padding-right: 2em;
+}
+
+
+
+#twitterLogo {
+    font-size: xx-large;
+}
+
+#mailLogo {
+    font-size: xx-large;
 }
 
 
@@ -765,7 +785,15 @@ header {
     height: 50px;
     width: 100%;
     background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
+.copyright {
+    font-size: small;
+    color: rgb(255, 255, 255, 0.5);
 }
 
 #upButton {
@@ -785,8 +813,13 @@ header {
 
 .footerMap {
     border-radius: 2em;
-    height: 140px;
-    width: 150px;
+    height: 120px;
+    width: 130px;
+}
+
+#mapDiv {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* PROGRESS  */
