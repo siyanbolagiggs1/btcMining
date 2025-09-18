@@ -443,19 +443,28 @@
 
             <!-- <div class="partnersFirstRow container mt-4"> -->
             <div class="partnersFirstRow1 row text-center mb-4">
-                <div class="logoDiv col-md-4"><img class="big" src="images/gridlessLogo.png" alt="">
-                    <h5> GRIDLESS</h5>
+                <div class="logoDiv col-md-4">
+                    <a href="https://gridlesscompute.com/" target="_blank">
+                        <img class="big" src="images/gridlessLogo.png" alt="">
+                        <h5> GRIDLESS</h5>
+                    </a>
                 </div>
                 <div id="sukumaLogo" class="logoDiv col-md-4">
-                    <div> <img class="big" id="gamaLogo" src="images/sukumaLogo.png" alt=""></div>
-                    <div id="div2">
-                        <h5> Sukuma</h5>
-                        <h5>Ventures</h5>
+                    <div>
+                        <a href="https://www.sukumaventures.com/" id="div2" target="_blank">
+                            <img class="big" id="sukumaLogo" src="images/sukumaLogo.png" alt="">
+                            <span>
+                                <h5> Sukuma</h5>
+                                <h5>Ventures</h5>
+                            </span>
+                        </a>
                     </div>
                 </div>
-                <div id="gama" class="logoDiv col-md-4 "><img class="big" id="gamaLogo" src="images/gamaLogo.png"
-                        alt="">
-                    <a href="https://www.gama.africa/" target="_blank">GAMA</a>
+                <div id="gama" class="logoDiv col-md-4 ">
+                    <a href="https://www.gama.africa/" target="_blank">
+                        <img class="big" id="gamaLogo" src="images/gamaLogo.png" alt="">
+                        <h5> GAMA</h5>
+                    </a>
                 </div>
             </div>
             <!-- </div> -->
@@ -465,14 +474,15 @@
                     <h5> Quantum</h5>
                 </div>
                 <div class="logoDiv col-md-4">
-                    <h5></h5>
-                    <a href="https://x.com/OGBTC?t=2GBIxvtEHTKucJdEjuGj6g&s=08">
+                    <a href="https://x.com/OGBTC?t=2GBIxvtEHTKucJdEjuGj6g&s=08" target="_blank">
                         <h5 class="OGBTCLogo"> @OGBTC</h5>
                     </a>
                 </div>
                 <div class=" logoDiv col-md-4">
-                    <img class="big" src="images/QRBLogo.png" alt="">
-                    <h5>QBR</h5>
+                    <a href="https://www.qrb-labs.com/" target="_blank">
+                        <img class="big" src="images/QRBLogo.png" alt="">
+                        <h5> QRB</h5>
+                    </a>
                 </div>
             </div>
             </div>
@@ -526,14 +536,19 @@
         <div class="footerDivWrap">
             <div class="col" id="footerFirstDiv">
                 <div id="twitterLogoDiv">
-                    <ion-icon name="logo-twitter" id="twitterLogo"></ion-icon>
                     <a href="https://x.com/TrojanMining?t=1qH-IJnuHsZhor1emMzVIw&s=08" class="ReachOutIcon text-white"
-                        target="_blank"></a>
+                        target="_blank">
+                        <ion-icon class="reachOutIcons" name="logo-twitter" id="twitterLogo" data-toggle="tooltip"
+                            title="@TrojanMining">
+                        </ion-icon>
+                    </a>
 
                 </div>
                 <div>
-                    <ion-icon name="mail" id="mailLogo"></ion-icon>
-                    <a href="mailto:trojanminingng@gmail.com" class="ReachOutIcon text-light" target="_blank"></a>
+                    <a href="mailto:trojanminingng@gmail.com" class="ReachOutIcon text-light" target="_blank">
+                        <ion-icon class="reachOutIcons" name="mail" id="mailLogo" data-toggle="tooltip"
+                            title="trojanminingng@gmail.com"></ion-icon>
+                    </a>
                 </div>
             </div>
 
@@ -563,7 +578,7 @@
             </div>
             <a href="#topSection"> <button type="button" id="upButton" class="col btn position-fixed w-5"
                     style="bottom: 10px; right: 10px; border-radius: 100px;">
-                    <ion-icon name="arrow-up-outline"></ion-icon>
+                    <ion-icon id="arrowUp" name="arrow-up-outline"></ion-icon>
                 </button></a>
         </div>
     </footer>
