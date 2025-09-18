@@ -643,6 +643,11 @@ header {
     flex-direction: row;
 }
 
+#sukumaLogo #div2 {
+    display: flex;
+    flex-direction: column;
+}
+
 #sukumaLogo div h5 {
     font-size: medium;
 }
