@@ -538,7 +538,7 @@ header {
 .founder-card {
     background: rgb(245, 245, 245);
     border-radius: 1em;
-    padding: 15px;
+    padding: 13px;
     padding-bottom: 0px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
