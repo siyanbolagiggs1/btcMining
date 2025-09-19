@@ -436,6 +436,26 @@ header {
     }
 }
 
+@media(max-width:767px) and (min-width:460px) {
+    .slideshow img {
+        height: 280px;
+    }
+
+    #whatWeDoCol {
+        height: 340px;
+    }
+}
+
+@media(max-width:390px) {
+    .slideshow img {
+        height: 200px;
+    }
+
+    #whatWeDoCol {
+        height: 250px;
+    }
+}
+
 /* 
     #whatWeDoContainer {
         display: flex;
