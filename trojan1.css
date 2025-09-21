@@ -328,11 +328,14 @@ header {
     /* border-radius: 1em; */
     position: absolute;
     width: 100%;
-    height: 193px;
+    height: 230px;
     top: 0;
     left: 0;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .slideshow img.active {
@@ -376,7 +379,7 @@ header {
 }
 
 #whatWeDoCol {
-    height: 240px;
+    height: 280px;
     /* border-radius: 1em; */
     padding: 2px;
     padding-bottom: 0px;
@@ -503,6 +506,17 @@ header {
     font-size: 18px;
 }
 
+.expand-icon2 {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
 .img-fluid {
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -543,7 +557,11 @@ header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 0.5px solid rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .founder-card img {
     width: 120px;
@@ -606,7 +624,7 @@ header {
 
 .founderText {
     color: rgba(0, 0, 0, 0.7);
-
+    /* font-size: 14px; */
 }
 
 .text-start {
@@ -1184,4 +1202,22 @@ EDITED */
         padding-right: 1px;
     } */
 
+}
+
+
+
+.modal-fullscreen {
+    height: 1050px;
+}
+
+.modalImage {
+    width: 80%;
+}
+
+@media(max-width:770px) {
+    .modalImage {
+        position: absolute;
+        top: 20%;
+        left: 0;
+    }
 }
