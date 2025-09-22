@@ -41,7 +41,7 @@ body {
 
 #topSection {
     height: auto;
-    background-image: url('https://images.unsplash.com/photo-1644952354935-0bc0d25a9996?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fGJpdGNvaW58ZW58MHx8MHx8fDA%3D');
+    background-image: url('https://plus.unsplash.com/premium_photo-1740505058305-636db2e8d1fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGRhdGElMjBjZW50ZXIlMjBkYXJrfGVufDB8fDB8fHww');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -275,7 +275,7 @@ header {
 #introduction {
     height: auto;
     color: aliceblue;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #introductionA {
@@ -305,11 +305,11 @@ header {
     align-items: center;
 }
 
-.slideshow::before {
+/* .slideshow::before {
     content: "";
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
-}
+} */
 
 .WhatWeDoText {
     height: 10px;
@@ -340,16 +340,16 @@ header {
     height: 230px;
     top: 0;
     left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    opacity: 0.5;
+    /* transition: opacity 1s ease-in-out;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
-.slideshow img.active {
+/* .slideshow img.active {
     opacity: 1;
-}
+} */
 
 #topSection {
     background-color: rgb(245, 245, 245);
@@ -398,9 +398,9 @@ header {
     height: auto;
 }
 
-.modalImage {
+/* .modalImage {
     width: 90%;
-}
+} */
 
 .modal-header {
     width: 90%;
@@ -427,7 +427,7 @@ header {
     top: 0;
     left: 0;
     border: 2.5px solid white;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.8);
     color: rgb(207, 207, 207);
     display: flex;
     flex-direction: column;
@@ -438,12 +438,18 @@ header {
 }
 
 .expand-icon2 button {
-    color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(255, 215, 0, 0.8);
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 40px;
     padding: 3px 5px;
     border-left: round;
     font-size: small;
+    letter-spacing: 3px;
+}
+
+.expand-icon2 button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0);
 }
 
 @media(max-width:767px) {
