@@ -135,7 +135,7 @@ body {
     }
 
     #navUl2 .lengthy {
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -168,7 +168,7 @@ body {
 
 @media(max-width: 660px) {
     .navbar-nav a {
-        font-size: small;
+        font-size: x-small;
     }
 }
 
