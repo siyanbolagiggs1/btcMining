@@ -424,6 +424,7 @@ header {
     #whatWeDoCol {
         width: 100%;
         height: 300px;
+        margin-bottom: 35px;
     }
 
     .modal-fullscreen {
@@ -452,7 +453,7 @@ header {
     .WhatWeDoText {
         display: flex;
         align-self: center;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
 
     #travels {
@@ -581,6 +582,7 @@ header {
     margin-bottom: 15px;
     object-fit: cover;
     object-position: top;
+    margin-bottom: 30px;
 }
 
 .founder-card h3 {
@@ -639,6 +641,12 @@ header {
 
 .text-start {
     padding: 0px 10px;
+}
+
+@media(max-width:768px) {
+    .founder-card {
+        margin-bottom: 25px;
+    }
 }
 
 /* MISSION */
