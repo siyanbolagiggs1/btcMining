@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
 }
 
 .logo {
@@ -818,11 +818,14 @@ header {
 
 .mentions div div {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 10px 10px rgba(164, 159, 159, 0.1);
     margin: 1em;
 }
 
-.mentions div div:hover {
+.mentions div div div {
+    box-shadow: 0 10px 10px rgba(164, 159, 159, 0.1);
+}
+
+.mentions div div div:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 10px rgba(164, 159, 159, 0.2);
 }
@@ -858,39 +861,36 @@ header {
 @media(max-width:767px) {
     .mentions div {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .mentions div div div {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+        box-shadow: 0 10px 10px rgba(164, 159, 159, 0.2);
     }
 
     .mentions div div {
-        height: auto;
-        margin-bottom: 40px;
-    }
-
-    .mentions div {
-        display: flex;
-        display: inline-block;
-    }
-
-    .mentions div {
         width: 50%;
     }
 
-    .mentions div img {
+    .mentions div div div img {
         width: 100%;
     }
 
     #voi img,
     #Journal img {
-        width: 85%;
+        width: 120%;
     }
 
     #gama img,
     #OGBTC img {
-        width: 75%;
+        width: 90%;
     }
 
     #gridless img {
-        width: 95%;
+        width: 90%;
     }
 
 }
