@@ -818,6 +818,8 @@ header {
 
 .mentions div div {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 10px rgba(164, 159, 159, 0.1);
+    margin: 1em;
 }
 
 .mentions div div:hover {
@@ -864,9 +866,9 @@ header {
         margin-bottom: 40px;
     }
 
-    .mentions {
+    .mentions div {
         display: flex;
-        flex-direction: row;
+        display: inline-block;
     }
 
     .mentions div {
@@ -890,6 +892,7 @@ header {
     #gridless img {
         width: 95%;
     }
+
 }
 
 
