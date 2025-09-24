@@ -969,6 +969,22 @@ header {
     font-size: 14px;
 }
 
+#timelineBig {
+    display: flex;
+    flex-direction: row;
+}
+
+#timelineBig h1 {
+    margin-right: 3px;
+}
+
+@media(max-width:500px) {
+    #timelineBig {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .timeline {
     position: relative;
     padding: 0;
