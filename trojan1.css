@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-self: center;
     justify-content: center;
+    align-items: center;
     margin-top: 30px;
 }
 
@@ -566,7 +567,7 @@ header {
     background: rgb(245, 245, 245);
     border-radius: 1em;
     padding: 13px;
-    padding-bottom: 0px;
+    padding-bottom: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 0.5px solid rgb(228, 228, 228);
@@ -815,6 +816,37 @@ header {
     border-bottom: 0.5px solid rgb(255, 196, 0);
 }
 
+.mentions div div h5 {
+    font-size: small;
+}
+
+.mentions div div a {
+    color: black;
+    text-decoration: none;
+}
+
+.mentions div img {
+    width: 70%;
+    height: auto;
+}
+
+#voi img,
+#Journal img {
+    width: 60%;
+}
+
+@media(max-width:767px) {
+    .mentions div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mentions div div {
+        margin-bottom: 40px;
+    }
+}
+
+
 #footer {
     width: auto;
     height: auto;
@@ -840,13 +872,13 @@ header {
 }
 
 #footerFirstDiv {
-    border-bottom: 0.5px solid rgb(255, 255, 255, 0.2);
+    border-bottom: 0.5px solid rgb(255, 255, 255, 0.1);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 2em;
     padding-bottom: 1.5em;
-    width: 90%;
+    width: 60%;
 }
 
 #footerFirstDiv div {
@@ -868,24 +900,17 @@ header {
     padding-right: 2em;
 }
 
-
-
-#twitterLogo {
+.ReachOutIcon {
     font-size: xx-large;
 }
 
-#twitterLogo:hover {
+.ReachOutIcon:hover {
     color: #999;
 }
 
-#mailLogo {
-    font-size: xx-large;
+.visitUs {
+    text-decoration: none;
 }
-
-#mailLogo:hover {
-    color: #999;
-}
-
 
 #upButtonDiv {
     height: 50px;
