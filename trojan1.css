@@ -816,6 +816,15 @@ header {
     border-bottom: 0.5px solid rgb(255, 196, 0);
 }
 
+.mentions div div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mentions div div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgba(164, 159, 159, 0.2);
+}
+
 .mentions div div h5 {
     font-size: small;
 }
@@ -835,6 +844,15 @@ header {
     width: 60%;
 }
 
+#gama img,
+#OGBTC img {
+    width: 50%;
+}
+
+#gridless img {
+    width: 67%;
+}
+
 @media(max-width:767px) {
     .mentions div {
         display: flex;
@@ -842,7 +860,35 @@ header {
     }
 
     .mentions div div {
+        height: auto;
         margin-bottom: 40px;
+    }
+
+    .mentions {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mentions div {
+        width: 50%;
+    }
+
+    .mentions div img {
+        width: 100%;
+    }
+
+    #voi img,
+    #Journal img {
+        width: 85%;
+    }
+
+    #gama img,
+    #OGBTC img {
+        width: 75%;
+    }
+
+    #gridless img {
+        width: 95%;
     }
 }
 
